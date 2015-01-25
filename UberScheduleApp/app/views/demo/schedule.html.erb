@@ -8,11 +8,15 @@
   <tr>
     <th>Course Number</th>
     <th>Course Name</th>
+    <th>Course Time</th>
+    <th>Course Location</th>    
   </tr>
   <% @courses .each do |course| %>
   <tr>
     <td><%= course.course_number %></td>
     <td><%= course.name %></td>
+    <td><%= course.time %></td>
+    <td><%= course.location %></td>
   </tr>
   <%end%>
 </table>
