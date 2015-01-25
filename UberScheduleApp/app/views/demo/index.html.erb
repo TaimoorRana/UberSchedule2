@@ -1,8 +1,11 @@
 <h1>Demo#index</h1>
 <p>Index</p>
+
+<!-- created a dummy login form for prototype-->
 <form method="post">
   <input type="text" name="username" value="username" /><br>
   <input type="password" name="password" value="password" /><br>
+  <!-- Link to the schedule page-->
   <%= link_to('Login',{:controller => 'demo', :action => 'schedule'}) %>
 </form>
 
