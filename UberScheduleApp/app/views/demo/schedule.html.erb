@@ -1,0 +1,18 @@
+<h1>Schedule#index</h1>
+<p>Schedule</p>
+
+<a href="/index"> index page</a>
+<%= link_to('index',{:controller => 'demo', :action => 'index'}) %>
+
+<table>
+  <tr>
+    <th>Course Number</th>
+    <th>Course Name</th>
+  </tr>
+  <% @courses .each do |course| %>
+  <tr>
+    <td><%= course.course_number %></td>
+    <td><%= course.name %></td>
+  </tr>
+  <%end%>
+</table>
