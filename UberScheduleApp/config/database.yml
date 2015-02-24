@@ -13,12 +13,12 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: sql366921
-  password: yY5!bU5%
-  socket: /tmp/mysql.sock
-  host: sql3.freemysqlhosting.net
+  username: taimoor_uberTeam
+  password: uberteam
+  #socket: /tmp/mysql.sock
+  host: montrealrepair.net
   port: 3306
-  database: sql366921
+  database: taimoor_uberSchedule
   
   #default: &default
   #adapter: mysql2
@@ -30,7 +30,7 @@ default: &default
 
 development:
   <<: *default
-  database: sql366921
+  database: taimoor_uberSchedule
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
