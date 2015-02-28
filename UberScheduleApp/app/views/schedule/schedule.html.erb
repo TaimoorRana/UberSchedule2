@@ -156,17 +156,17 @@ Schedule
 <div class="greybody">
 <table class="schedulet">
   <tr class="schedulet">
-    <th>Course Number</th>
+    <th>Course Code</th>
     <th>Course Name</th>
-    <th>Course Time</th>
-    <th>Course Location</th>    
+    <th>Course Credits</th>
+    <th>Course Description</th>
   </tr>
   <% @courses .each do |course| %>
   <tr class="schedulet">
-    <td><%= course.course_number %></td>
+    <td><%= course.course_code %></td>
     <td><%= course.name %></td>
-    <td><%= course.time %></td>
-    <td><%= course.location %></td>
+    <td><%= course.credits %></td>
+    <td><%= course.description %></td>
   </tr>
   <%end%>
 </table>
