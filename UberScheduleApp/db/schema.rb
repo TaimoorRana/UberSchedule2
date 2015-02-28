@@ -26,12 +26,12 @@ ActiveRecord::Schema.define(version: 20150125153508) do
   add_index "admin_users", ["username"], name: "index_admin_users_on_username", using: :btree
 
   create_table "courses", force: :cascade do |t|
-    t.string   "name",          limit: 255
-    t.string   "course_number", limit: 255
-    t.datetime "created_at",                                          null: false
-    t.datetime "updated_at",                                          null: false
-    t.string   "time",          limit: 15,  default: "12h00 - 13h00"
-    t.string   "location",      limit: 10,  default: "H-535"
+    t.datetime "created_at",                                             null: false
+    t.datetime "updated_at",                                             null: false
+    t.string   "course_code", limit: 15,  default: "course code"
+    t.string   "name",        limit: 255, default: "course name"
+    t.float    "credits",     limit: 24,  default: 3.0
+    t.string   "description", limit: 255, default: "course description"
   end
 
 end
