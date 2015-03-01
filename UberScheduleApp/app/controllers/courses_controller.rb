@@ -1,7 +1,7 @@
 class CoursesController < ApplicationController
   layout false
   def index
-    @courses = Course.order('position ASC')
+    @courses = Course.all
   end
 
   def show
