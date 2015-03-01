@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'schedule/schedule'
 
-  root "demo#index"
+  root "login#index"
   match ':controller(/:action(/:id))', :via => :get
   match ':controller(/:action(/:id))', :via => :post
 
