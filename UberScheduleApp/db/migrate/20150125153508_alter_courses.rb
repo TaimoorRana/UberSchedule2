@@ -4,6 +4,8 @@ class AlterCourses < ActiveRecord::Migration
     add_column("courses","name",:string ,:default => "course name")
     add_column("courses","credits",:float, :limit => 2 ,:default => "3")
     add_column("courses","description",:string,:default => "course description")
+
+
   end
   
   def down
@@ -11,5 +13,6 @@ class AlterCourses < ActiveRecord::Migration
     remove_column("courses","name")
     remove_column("courses","credits")
     remove_column("courses","description")
+
   end
 end
