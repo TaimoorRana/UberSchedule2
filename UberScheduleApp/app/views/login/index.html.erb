@@ -64,16 +64,16 @@ border:0px;
 p{
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 font-size:16px;
-	font-size:14px;
-	color:#ffffff;
-	font-weight:bolder;
-	letter-spacing:3px;
-	display:inline;
 color:#ffffff;
 }
 
 .whitexpand{
 font-family: "Trebuchet MS", Helvetica, sans-serif;
+font-size:14px;
+color:#ffffff;
+font-weight:bolder;
+letter-spacing:3px;
+display:inline;
 }
 </style>
 <!--top div-->
@@ -81,29 +81,16 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
 <p class="whitexpand">&nbsp; &nbsp; &nbsp;UBER</p><img class="center" src="/assets/logo.png" alt="logo"><p class="whitexpand">PLANNER</p><br><span style="font-family: Trebuchet, Helvetica, sans-serif; font-size:12px; color:#ffffff; font-weight:bold;">BY UBERTEAM</span>
 <div class="login">
 <br><hr><h1>LOGIN</h1><hr>
-
-  <!-- COMMENTED OUT THE ORIGINAL LOGIN -->
-<!--<fieldset>
+<fieldset>
 <p>
 <label>NETNAME:</label><br>
 <input type="text" size="24" name="netName" /><br><br>
 <label>PASSWORD:</label><br>
 <input type="password" size="24" name="pw" /><br><br>
-<!--<input style="width:80px; height:25px; background-color:orange; border:0px;" type="submit" value="Go" name="submit" />
-  <%=button_to( "Login", :action => "loginView", :controller => "loginUser")%>
+<!--<input style="width:80px; height:25px; background-color:orange; border:0px;" type="submit" value="Go" name="submit" />-->
+  <%=button_to( "Login", :action => "schedule", :controller => "schedule")%>
 </p>
-</fieldset> -->
-
-<%= form_tag(:action => 'loginView', :controller => 'loginUser') do %>
-
-  <%= label_tag(:uName, "USER NAME:") %>
-  <%= text_field_tag(:uName) %>
-  <%= label_tag(:pWord, "PASSWORD:") %>
-  <%= password_field_tag(:pWord) %><br>
-  <%= submit_tag("LOGIN") %>
-`
-<% end %>
-
+</fieldset>
 </div>
 </div>
 <!--bottom div : links-->
